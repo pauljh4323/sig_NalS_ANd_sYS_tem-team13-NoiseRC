@@ -3,7 +3,7 @@
 # the model; the output stays at that level (peak capped at 0.99). weights is relative to the repo root.
 method: gru_mask
 params:
-  weights: weights/gru_v8p2z3e.pt
+  weights: weights/gru_v8p2z3e.pt  # resolved against the repo root, not the cwd
   device: cpu
   level_norm: true
   level_mode: rms_norm
