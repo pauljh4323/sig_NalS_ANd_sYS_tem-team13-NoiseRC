@@ -1,0 +1,10 @@
+# Submission config (round 2): gru_v8p2z3e + input level mode rms_norm (inference only).
+# rms_norm: the input is scaled to target_rms (median whole-file RMS of the train noisy files) before
+# the model; the output stays at that level (peak capped at 0.99). weights is relative to the repo root.
+method: gru_mask
+params:
+  weights: weights/gru_v8p2z3e.pt
+  device: cpu
+  level_norm: true
+  level_mode: rms_norm
+  target_rms: 0.079130
